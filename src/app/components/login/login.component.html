@@ -1,0 +1,12 @@
+<div class="login-container">
+    <div class="block">
+        <form [formGroup]="loginForm">
+
+            <input type="text" name="username" placeholder="email" formControlName="email" autocomplete="username">
+
+            <input type="password" name="password" placeholder="password" formControlName="password" autocomplete="password">
+
+            <button type="submit" (click)="login()">Login</button>
+        </form>
+    </div>
+</div>
